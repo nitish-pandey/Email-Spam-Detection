@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spam Classification</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+            border: darkgrey;
+        }
+        form {
+            background-color: burlywood;
+            border: solid black 2px;
+            align-self: center;
+            margin: 25px 15px 15px 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <center>
+    <h1>Spam Classifier</h1>
+    <form action="{{url_for('predict')}}" method="post"  >
+        <br><br>
+        Input :
+        <textarea name="message" id="001" cols="50" rows="10"></textarea><br><br>
+        <input type="submit" class="btn-info" value="predict"> <br><br>
+        <strong style="border: solid blue 1px;">
+            {% if prediction == 1%}
+	        <h2 style="color:red;">Spam : Be aware</h2>
+	        {% elif prediction == 0%}
+	        <h2 style="color:green;">Not Spam : Looks Safe</h2>
+	        {% endif %}
+
+        </strong><br><br><br>
+    </form>
+    <br><br>
+    <footer>
+        © 2022-Nitish-Pandey <br><br>
+        <strong>Contact me : </strong><br>
+        Github : <a href="http://www.github.com/nitish-pandey">@nitish-pandey</a><br>
+        Linked In : <a href="https://www.linkedin.com/in/nitish-pandey-250b84224/">nitish-pandey-250b84224</a><br>
+        Instagram : <a href="https://www.instagram.com/n.pand3y/">@n.pand3y </a><br>
+    </footer>
+    
+</center>
+</div>   
+</body>
+</html>
