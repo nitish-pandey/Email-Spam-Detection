@@ -11,8 +11,8 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer,PorterStemmer
 
 # Load the model and vectorizer
-encoder=joblib.load('tfidf.pkl')
-model=joblib.load('mymodel.pkl')
+encoder=joblib.load('Resources/vectorizer.pkl')
+model=joblib.load('Resources/mymodel.pkl')
 
 # load the lemmatizer and stopwords
 lematizer=WordNetLemmatizer()
@@ -42,7 +42,12 @@ def predict():
     data=[process(data)]
     vector=encoder.transform(data).toarray()
     pred=model.predict(vector)
-    return render_template('index.html',prediction=pred)
+    
+    if pred:
+        return render_template('spam.html')
+
+    else:
+        return render_template('safe.html')
 
   
 

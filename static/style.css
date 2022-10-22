@@ -1,0 +1,102 @@
+
+.main{
+
+background-color: #fff;
+
+}
+
+/* styling a footer */
+
+.footer{
+
+background-color: #000;
+
+/* set footer to the end of page */
+
+position: absolute;
+
+
+}
+
+
+.form{
+
+background-color: #fff;
+
+/* adding margin */
+
+margin: 10px;
+
+/* boders */
+
+border: 1px solid #000;
+
+/* padding */
+
+padding: 10px;
+
+
+
+}
+
+.btn{
+
+    /* styling a button */
+
+    background-color: #000;
+
+    /* text color */
+
+    color: #fff;
+
+    /* padding */
+
+    padding: 10px;
+
+    /* border */
+
+    border: 1px solid #000;
+
+    /* border radius */
+
+    border-radius: 5px;
+
+    /* text decoration */
+
+    text-decoration: none;
+
+    /* text align */
+
+    text-align: center;
+
+    /* text transform */
+
+    text-transform: uppercase;
+
+    /* font size */
+
+    font-size: 20px;
+
+}
+
+
+.img{
+    /* set height width margin padding */
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    /* border */
+    border: 1px solid #000;
+    /* border radius */
+    border-radius: 50%;
+    /* float */
+    /* display */
+    display: inline-block;
+    /* box shadow */
+    box-shadow: 0 0 10px #000;
+    /* opacity */
+    opacity: 1;
+
+
+}
